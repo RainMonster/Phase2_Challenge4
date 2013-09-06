@@ -9,15 +9,43 @@ body {
 
 header {
   padding: 10px;
+  background-color: #333;
 }
 
 .brand {
-  font-family: "Lato", Verdana, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   font-size: 3em;
+  font-style: inline;
+  position: relative;
+  top: 10px;  
+}
+
+.brand a {
+  text-decoration: none;
+  color: white;
 }
 
 .brand a:hover {
-  text-decoration: underline;
+  color: #ff0;
+}
+
+nav ul {
+  text-align: right;
+  margin: -30px 0 30px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  color: #ff0;
 }
 
 .container {
@@ -28,4 +56,28 @@ header {
 .marketing {
   padding: 10px;
   margin: 1em 0;
+  background-color: #555;
+  color: white;
 }
+
+.features {
+  column-count: 3;
+  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3; /* Safari and Chrome */
+  -webkit-column-gap: 20px;
+  -webkit-column-rule: 2px outset #555;
+  -webkit-column-rule-style: dotted;
+}
+
+.features div {
+  padding: 20px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+/*
+For your yellow color, you can use the HTML color code #ff0.
+The two "grey" colors used are #333 and #555.*/
